@@ -18,7 +18,7 @@ body {
   .left {
       width: 35%;
       height: 100vh;
-      background-color: rgb(220, 231, 240);
+      background-color: rgb(223, 224, 224);
   }
   
   .right {
@@ -52,3 +52,23 @@ body {
     li {
       margin-top: 10px;
     }
+
+@media screen {
+    .main {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .left {
+        width: auto;
+        height: auto;
+    }
+    
+    .right {
+        width: auto;
+        height: auto;
+    }
+}
