@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Landing Page</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#types">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+
+    <div class="home" id="home">
+        <h1>Fresh Paws</h1>
+        <p>Cleaning the world one paw at a time!</p>
+    </div>
+
+    <section id="about">
+            <h2>About Us</h2>
+            <p>At Fresh Paws, we offer a wide variety of pet grooming services to suit every need. You can bring your pets to our clinic, or we can bring our black windowless van to your house!</p>
+        <img src="" alt="Insert dog image" width="100%" height="auto">
+        </section>
+
+    <section class="services" id="services">
+            <h2>Services</h2>
+            <p>In-office and house calls offered</p>
+        <img src="" alt="" width="100%" height="auto">
+    </section>
+
+    <footer>
+        <p>&copy; Fresh Paws</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu-links");
+            const icon = document.querySelector(".hamburger-icon");
+            menu.classList.toggle("open");
+            icon.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

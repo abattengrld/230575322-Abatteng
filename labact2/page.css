@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather|Open+Sans);
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*navigation*/
+
+header {
+    background-color: #53390a;
+    padding: 1rem;
+    padding-right: 3rem;
+    position: fixed;
+    width: 96%;
+    height: 5vh;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: #3a2f0c;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #3a2f0c;
+}
+
+/*Home*/
+
+.home {
+    height: 100vh;
+    text-align: center;
+    background-color: #fee9a9;
+}
+
+.home h1{
+    padding-top: 30vh;
+    height: 20vh;
+    font-size: 100px;
+    color: #3a2f0c;
+    font-family: Merriweather, serif;
+    text-shadow: 2px 2px #544001d2;
+}
+
+.home p {
+    padding-bottom: 20vh;
+    padding-top: 5vh;
+    height: 20vh;
+    font-size: 50px;
+    color: rgba(69, 47, 0, 0.715);
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px #ffffff;
+}
+
+/*sections*/
+
+section {
+    display: grid;
+    grid-template-columns: 60% 1fr;
+    grid-template-rows: 50vh 50vh;
+    grid-template-areas: 
+        "image h2"
+        "image p";
+}
+
+section img {
+    grid-area: image;
+    place-self: center;
+
+}
+
+section h2 {
+    grid-area: h2;
+    align-self: end;
+    padding-bottom: 5vh;
+    font-family: Merriweather, serif;
+    font-size: 46px;
+    width: 92%;
+    color: #3a2f0c;
+    text-shadow: 1px 1px #eaf8ff;
+}
+
+section p {
+    grid-area: p;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 82%;
+    justify-content: center;
+    align-self: start;
+    text-align: justify;
+    color: #3a2f0c;
+}
+
+#about {
+    background-color: #f9f4e3;
+}
+
+#about img {
+    width: 60%;
+    height: auto;
+    border: 7px solid #f5fdff;
+    box-shadow: 10px 10px rgb(250, 250, 250);
+}
+
+footer {
+    text-align: center;
+    background-color: #fdfbc0;
+}
