@@ -12,7 +12,7 @@ html {
 /*navigation*/
 
 header {
-    background-color: #53390a;
+    background-color: #27445D;
     padding: 1rem;
     padding-right: 3rem;
     position: fixed;
@@ -36,10 +36,10 @@ a {
 }
 
 a:hover {
-    color: #3a2f0c;
+    color: #71BBB2;
     text-decoration: underline;
     text-underline-offset: 1rem;
-    text-decoration-color: #3a2f0c;
+    text-decoration-color: #71BBB2;
 }
 
 /*Home*/
@@ -57,9 +57,9 @@ a:hover {
     padding-top: 30vh;
     height: 20vh;
     font-size: 100px;
-    color: #3a2f0c;
+    color: #2e4961;
     font-family: Merriweather, serif;
-    text-shadow: 2px 2px #544001d2;
+    text-shadow: 2px 2px #f9f4e3;
 }
 
 .home p {
@@ -67,7 +67,7 @@ a:hover {
     padding-top: 5vh;
     height: 20vh;
     font-size: 50px;
-    color: rgba(69, 47, 0, 0.715);
+    color: #27445D;
     font-family: "Open Sans", sans-serif;
     text-shadow: 2px 2px #ffffff;
 }
@@ -122,12 +122,73 @@ section p {
     box-shadow: 10px 10px rgb(250, 250, 250);
 }
 
-#services img {
-    width: 80%;
-    height: auto;
-    border: 7px solid #DDF2FD;
-    box-shadow: 10px 10px rgba(85, 114, 124, 0.715);
+/*slideshow*/
+
+/* Slideshow container */
+.slideshow-container {
+    grid-area: image;
+    max-width: 90vh;
+    position: relative;
+    margin: auto;
 }
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: #f5fdff;
+}
+
+/* Caption text */
+.text {
+  font-family: Merriweather, serif;
+  color: #583333;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 30%;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
 
 
 footer {
