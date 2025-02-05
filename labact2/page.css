@@ -47,7 +47,10 @@ a:hover {
 .home {
     height: 100vh;
     text-align: center;
-    background-color: #fee9a9;
+    background-image: url(https://images.squarespace-cdn.com/content/v1/61091f2b27c52d42fefedd21/1628194206565-566D3BFL5PH1VYH782NF/Untitled+design-55.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
 }
 
 .home h1{
@@ -113,13 +116,242 @@ section p {
 }
 
 #about img {
-    width: 60%;
+    width: 80%;
     height: auto;
     border: 7px solid #f5fdff;
     box-shadow: 10px 10px rgb(250, 250, 250);
 }
 
+#services img {
+    width: 80%;
+    height: auto;
+    border: 7px solid #DDF2FD;
+    box-shadow: 10px 10px rgba(85, 114, 124, 0.715);
+}
+
+
 footer {
     text-align: center;
     background-color: #fdfbc0;
+}
+
+/*hamburger icon*/
+
+#hamburger-icon {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+
+/*responsiveness*/
+
+
+@media (max-width: 1024px) {
+    .home {
+        height: auto;
+    }
+    .home h1{
+        padding-top: 20vh;
+        height: auto;
+        font-size: 90px;
+    }
+
+    .home p {
+        padding-top: 2vh;
+        height: auto;
+        font-size: 40px;
+    }
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "image"
+            "h2"
+            "p";
+    }
+
+    section img {
+        grid-area: image;
+        width: 50%;
+        height: auto;
+        margin-top: 7vh;
+    }
+    
+    section h2 {
+        grid-area: h2;
+        place-self: center;
+        align-self: end;
+        padding-bottom: 2vh;
+        font-size: 37px;
+        width: 50%;
+        text-align: center;
+        padding-top: 5vh;
+        padding-bottom: 3vh;
+    }
+    
+    section p {
+        place-self: center;
+        font-size: 14px;
+        width: 60%;
+        align-self: start;
+        text-align: justify;
+        padding-bottom: 5vh;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .home {
+        height: auto;
+    }
+    .home h1{
+        padding-top: 20vh;
+        height: auto;
+        font-size: 60px;
+    }
+
+    .home p {
+        padding-top: 1vh;
+        height: auto;
+        font-size: 30px;
+    }
+    section {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas:
+            "image"
+            "h2"
+            "p";
+    }
+
+    section img {
+        grid-area: image;
+        width: 30%;
+        height: auto;
+        margin-top: 3vh;
+    }
+    
+    section h2 {
+        grid-area: h2;
+        place-self: center;
+        align-self: end;
+        padding-bottom: 1vh;
+        font-size: 20px;
+        width: 30%;
+        text-align: center;
+        padding-top: 2vh;
+        padding-bottom: 1vh;
+    }
+    
+    section p {
+        place-self: center;
+        font-size: 10px;
+        width: 50%;
+        align-self: start;
+        text-align: justify;
+        padding-bottom: 3vh;
+    }
+
+    #types img {
+        width: 50%;
+    }
+
+    .nav {
+        display: none;
+    }
+    .hamburger-icon {
+        display: flex;
+    }
+    #hamburger-nav {
+        display: flex;
+        height: auto;
+        padding: 1rem;
+    }
 }
