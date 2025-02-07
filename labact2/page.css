@@ -25,6 +25,10 @@ header {
     left: 0;
 }
 
+#services h2, p {
+    margin-left: 10px;
+}
+
 .nav-links {
     display: flex;
     gap: 2rem;
