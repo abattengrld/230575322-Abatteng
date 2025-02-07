@@ -160,7 +160,7 @@ section p {
 /* Slideshow container */
 .slideshow-container {
     grid-area: image;
-    max-width: 90vh;
+    max-width: 70vh;
     position: relative;
     margin: auto;
 }
