@@ -54,7 +54,7 @@ header {
 .home {
     height: 100vh;
     text-align: center;
-    background-image: url(https://images.squarespace-cdn.com/content/v1/61091f2b27c52d42fefedd21/1628194206565-566D3BFL5PH1VYH782NF/Untitled+design-55.png);
+    background-image: url('cat-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
